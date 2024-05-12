@@ -1,0 +1,20 @@
+NÃO ME RESPONSABILIZO POR MÁ UTILIZAÇÃO DOS SCRIPTS E DANOS CAUSADOS PELO MESMO.
+
+Os scripts foram desenvolvidos para estudos em laboratórios próprios ou até mesmo laboratórios controlados, que você tenha permissão (Algum curso, etc...).
+
+Lembre-se da ética e de respeitar as leis, empresas e pessoas.
+
+Bons Estudos.
+
+
+
+OBS: Para utilização no modo padrão será necessário realizar o download da wordlist que disponibilizei junto com o script e não alterá-la (manter a wordlist na mesma pasta em que a ferramenta se encontra).
+
+A ferramenta está ainda na primeira versão, ela realizará o "bruto", basicamente pesquisará diretórios e arquivos simples.
+
+Em breve sairá segunda versão dela, uma atualização contendo correções de bugs, tratamento de erros e novas funcionalidades.
+
+Uso livre para reutilizá-la, modificá-la e criar versões similares.
+
+Favor, se utilizar a ferramenta, manter os créditos originais. Obrigado! 
+
