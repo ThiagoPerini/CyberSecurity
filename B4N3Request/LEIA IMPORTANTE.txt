@@ -14,7 +14,5 @@ A ferramenta está ainda na primeira versão, ela realizará o "bruto", basicame
 
 Em breve sairá segunda versão dela, uma atualização contendo correções de bugs, tratamento de erros e novas funcionalidades.
 
-Uso livre para reutilizá-la, modificá-la e criar versões similares.
-
 Favor, se utilizar a ferramenta, manter os créditos originais. Obrigado! 
 
