@@ -1,8 +1,8 @@
 #!/usr/share/python3
 
 '''
-Modo de uso: python3 WebRequestAutomatizado.py [http://SITE ou https://SITE] [caminho/para/wordlist.txt]
-Exemplo: python3 WebRequestAutomatizado.py http://www.teste.com.br caminho/para/wordlist.txt
+Modo de uso: python3 B4N3Request.py [http://SITE ou https://SITE] [caminho/para/wordlist.txt]
+Exemplo: python3 B4N3Request.py http://www.teste.com.br caminho/para/wordlist.txt
 OBS: Se a wordlist não for informada, automaticamente será selecionada a wordlist padrão
 '''
 
