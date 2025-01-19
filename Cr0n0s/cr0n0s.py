@@ -107,9 +107,9 @@ def converte_host_rede(host_c, rede_c, ip_int, mascara_int):
     return list(completo)
 
 def converte_broadcast(rede_c, mascara_int):
-    rede_lista = rede_c.split(".") # '203', '0', '113', '168'
-    rede_int = [int(valores) for valores in rede_lista] # 203,0,113,168
-    rede_binaria = [str(bin(valores)[2:]).zfill(8) for valores in rede_int] # '11001011', '00000000' , '01110001', '10101000'
+    rede_lista = rede_c.split(".") 
+    rede_int = [int(valores) for valores in rede_lista] 
+    rede_binaria = [str(bin(valores)[2:]).zfill(8) for valores in rede_int]
     broadcast_binario = [str(bin(valores)[2:]).zfill(8) for valores in mascara_int]
     broadcast_binario_rev = ['0' if item == '1' else '1' for valor in broadcast_binario for item in valor if item != "."]
 
