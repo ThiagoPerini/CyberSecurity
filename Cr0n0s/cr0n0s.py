@@ -109,7 +109,7 @@ def converte_host_rede(host_c, rede_c, ip_int, mascara_int):
 def converte_broadcast(rede_c, mascara_int):
     rede_lista = rede_c.split(".") 
     rede_int = [int(valores) for valores in rede_lista] 
-    rede_binaria = [str(bin(valores)[2:]).zfill(8) for valores in rede_int]
+    rede_binaria = [str(bin(valores)[2:]).zfill(8) for valores in rede_int] 
     broadcast_binario = [str(bin(valores)[2:]).zfill(8) for valores in mascara_int]
     broadcast_binario_rev = ['0' if item == '1' else '1' for valor in broadcast_binario for item in valor if item != "."]
 
@@ -151,6 +151,10 @@ def verifica_classe(conf_classe):
 
 def impressao(ip, mascara, cidr, bin_ip_c, bin_masc_c, host_c, rede_c, classe, broadcast, enderecos_validos, primeiro_host, ultimo_host):
 
+   rede_imp = rede_c.split(".")
+   rede_imp = rede_imp[:3]
+   rede_imp = ".".join(rede_imp)
+
    sleep(2)
    print('_______________________________________________')
    print(f"\n\033[1;34m[+] IP: \033[0;0m{ip} \033[1;34m[+] Binario:\033[0;0m  {bin_ip_c}")
@@ -158,8 +162,8 @@ def impressao(ip, mascara, cidr, bin_ip_c, bin_masc_c, host_c, rede_c, classe, b
    print(f"\033[1;34m[+] IP/CIDR: \033[0;0m{ip}/{cidr}")
    print(f"\033[1;34m[+] Host: \033[0;0m{host_c}")
    print(f"\033[1;34m[+] Rede: \033[0;0m{rede_c}")
-   print(f"\033[1;34m[+] Primeiro host disponível: \033[0;0m{rede_c[:-4]}.{primeiro_host}")
-   print(f"\033[1;34m[+] Ultimo host disponível: \033[0;0m{rede_c[:-4]}.{ultimo_host}")
+   print(f"\033[1;34m[+] Primeiro host disponível: \033[0;0m{rede_imp}.{primeiro_host}")
+   print(f"\033[1;34m[+] Ultimo host disponível: \033[0;0m{rede_imp}.{ultimo_host}")
    print(f"\033[1;34m[+] Broadcast:  \033[0;0m{broadcast}")
    print(f"\033[1;34m[+] Classe:\033[0;0m {classe}")
    print(f"\033[1;34m[+] Número de endereços possíveis: \033[0;0m{enderecos_validos}")
