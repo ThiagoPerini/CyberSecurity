@@ -2,6 +2,17 @@ from scapy.all import *
 from scapy.layers.l2 import Ether
 from scapy.layers.inet import IP, TCP, UDP, ICMP
 
+
+"""
+---------------------------------------------------------
+AVISO ÉTICO: Esta ferramenta foi desenvolvida exclusivamente 
+para fins educacionais e estudo do Modelo OSI/TCP-IP.
+O autor não se responsabiliza pelo uso indevido ou ilegal.
+Sempre obtenha autorização antes de monitorar redes de terceiros.
+---------------------------------------------------------
+"""
+
+
 def monitora_dados(packet):
 
 	# Verifica a camada 2 para extrair endereços MAC
