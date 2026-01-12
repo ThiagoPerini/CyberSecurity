@@ -55,4 +55,4 @@ def monitora_dados(packet):
 	
 
 print("\033[1;36m[+]--The Argus--[+]\033[0m - Criado por: \033[1;36mThiago Perini\033[0m")
-sniff(prn=monitora_dados)
+sniff(prn=monitora_dados, store=False)
